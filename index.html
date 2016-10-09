@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Linux For Coder</title>
+		<title>Kelompok 7 - Incremental Model</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/moon.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -25,31 +25,103 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Linux For Coder</h1>
+					<section>
+					<h1>Incremental Model</h1>
+					</section>
+					<section>
+						<h2>Themes</h2>
+					<p>
+						Pilih Tema <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+					</section>
+					<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
 				</section>
 
 				<section data-transition="zoom">
-					<h2>Apa Itu linux ?</h2>
+					<h2>Incremental Model ?</h2>
 					<p>
-						linux adalah sistem operasi yang berbasis Open source
+						Sebuah sistem pengembagan <i>software</i> yang dipecah menjadi beberapa bagian atau fungsi sehingga pengembangannya menjadi secara bertahap. 
 					</p>
+
 				</section>
 
 				<section>
-					<h2>Open Source ?</h2>
 					<ul>
-						<li>Gratis</li>
-						<li>Mudah di dapatkan</li>
-						<li>Freedom</li>
-						<li>Bisa dijadikan Bisnis</li>
+						<li>Merupakan perbaikan dari model <i>Waterfall</i></li>
+						<li>tahapan pertama sering merupakan inti dari produk</li>
+						<li>Berfokus pada penyampain produk dalam setiap tahap</li>
+						<li>Semakin banyak tahap , semakin baik sistemnya </li>
 					</ul>
 				</section>
 
 				<section>
-					<img data-src="linux1.png">
+					<img src="2.png" height="650" width="1500">
 				</section>
 
-				<section>Slide 2</section>
+				<section>
+
+				<h3>Tahapan Incremental model</h3>
+					<ul>
+						<li>Request</li>
+							proses tahapan awal yang dilakukan pada incremental model adalah penentuan kebutuhan atau analisis kebutuhan 
+						<br><br>
+						<li>Specification</li>
+							menggunakan analisis kebutuhan sebagai acuannya.
+							<br><br>
+						<li>Architecture</li>
+							perancangan software yang terbuka agar dapat diterapkan sistem pembangunan per-bagian pada tahapan selanjutnya
+							<br>
+						<li>Code </li>
+						<br>	
+						<li>Test</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h4>Kelebihan</h4>
+					<ul>
+						<li>model dengan manajemen yang sederhana</li>
+						<li>sistem dasar lebih cepat selesai</li>
+						<li>resiko kegagalan proyek lebih rendah</li>
+						<li>mampu mengakomodasi perubahan secara fleksibel</li>
+						<li>produk yang dihasilkan semakin lama semakin lengkap</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Kelemahan</h4>
+					<ul>
+						<li>kemungkinan tiap bagian tidak dapat diintegrasikan</li>
+						<li>terjadi kesulitan untuk memetakan kebutuhan pengguna ke dalam rencana spesifikasi masing-masing hasil increment</li>
+						<li>Butuh waktu yang relatif lebih lama untuk menghasilkan produk yang lengkap</li>
+						<li>setiap tambahan yang dibangun harus dimasukkan kedalam struktur yang ada tanpa menurunkan kualitas dari yang telah dibangun system tersebut sampai saat ini.</li>
+					</ul>
+
+				</section>
 			</div>
 		</div>
 
